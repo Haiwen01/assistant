@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -72,5 +73,21 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.7.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.1.7.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.6.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-java:1.2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-core:1.2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-html:0.2.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-jvm-deps:1.0.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:gherkin:2.12.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-junit:1.2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: info.cukes:cucumber-spring:1.2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.1.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.1.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.1.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:2.0.1" level="project" />
   </component>
 </module>
