@@ -3,11 +3,15 @@ package com.haiwen;
 import com.haiwen.entity.EventDO;
 import com.haiwen.mapper.EventMapper;
 import com.haiwen.model.EventRecord;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 /**
@@ -22,7 +26,7 @@ public class EventService {
     @Autowired
     private EventMapper eventMapper;
 
-    public void addNewEvent(EventRecord eventRecord) {
+    public boolean addNewEvent(EventRecord eventRecord) {
         Date nowTime = new Date();
         EventDO eventDO = EventDO.builder()
                 .createTime(nowTime)
@@ -30,7 +34,8 @@ public class EventService {
                 .startTime(eventRecord.getStartTime())
                 .title(eventRecord.getTitle())
                 .build();
-        eventMapper.insert(eventDO);
+        int value = eventMapper.insert(eventDO);
+        return value > 0;
     }
 
     public List<EventRecord> getEventsOnDate(Date dateTime) {

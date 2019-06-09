@@ -88,6 +88,6 @@
   <select id="selectByStartTime" resultMap="BaseResultMap">
     select id, start_time, title
     from event
-    where <![CDATA[ DATE_FORMAT(start_time, '%Y-%m-%d %H:%i:%s') = DATE_FORMAT(#{dateTime} , '%Y-%m-%d %H:%i:%s') ]]>
+    where <![CDATA[ DATE_FORMAT(start_time, '%Y-%m-%d %H:%i') = DATE_FORMAT(#{dateTime} , '%Y-%m-%d %H:%i') ]]>
   </select>
 </mapper>

@@ -3,6 +3,8 @@ package com.haiwen;
 import com.haiwen.model.EventRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
@@ -34,5 +36,11 @@ public class EventController {
             e.printStackTrace();
             return null;
         }
+    }
+
+    @PostMapping("/addEvent")
+    public String addNewEvent(@RequestBody EventRecord eventRecord) {
+        boolean success = eventService.addNewEvent(eventRecord);
+        return success ? "true" : "false";
     }
 }
